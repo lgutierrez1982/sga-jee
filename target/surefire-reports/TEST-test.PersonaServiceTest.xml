@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="52.058" errors="1" skipped="0" tests="1" name="test.PersonaServiceTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Lgutierrez\Desktop\Documentos\Workspace\sga-jee"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CL"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Lgutierrez\Desktop\Documentos\Workspace\sga-jee"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre7\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\LGUTIE~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Users\Lgutierrez\Desktop\Documentos\Workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf838618507118943350.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_73/bin/server;C:/Program Files/Java/jre1.8.0_73/bin;C:/Program Files/Java/jre1.8.0_73/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files\Git\cmd;C:\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Lgutierrez"/>
+    <property name="user.timezone" value="America/Santiago"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Lgutierrez"/>
+    <property name="java.class.path" value="/C:/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre7"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre7\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre7\lib\resources.jar;C:\Program Files\Java\jre7\lib\rt.jar;C:\Program Files\Java\jre7\lib\sunrsasign.jar;C:\Program Files\Java\jre7\lib\jsse.jar;C:\Program Files\Java\jre7\lib\jce.jar;C:\Program Files\Java\jre7\lib\charsets.jar;C:\Program Files\Java\jre7\lib\jfr.jar;C:\Program Files\Java\jre7\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Lgutierrez\Desktop\Documentos\Workspace\sga-jee\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="52.058" classname="test.PersonaServiceTest" name="testEJBPersonaService">
+    <error message="javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB" type="javax.ejb.EJBException">javax.ejb.EJBException: javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer._getContext(StatelessSessionContainer.java:454)
+	at com.sun.ejb.containers.BaseContainer.getContext(BaseContainer.java:2547)
+	at com.sun.ejb.containers.BaseContainer.preInvoke(BaseContainer.java:1899)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:89)
+	at com.sun.proxy.$Proxy109.findAllPersonas(Unknown Source)
+	at mx.com.gm.sga.servicio.PersonaServiceImpl.listarPersonas(PersonaServiceImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1052)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1124)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:5388)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:619)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:800)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:571)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doAround(SystemInterceptorProxy.java:162)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:861)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:800)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:370)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:5360)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:5348)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:214)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:89)
+	at com.sun.proxy.$Proxy175.listarPersonas(Unknown Source)
+	at test.PersonaServiceTest.testEJBPersonaService(PersonaServiceTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer$SessionContextFactory.create(StatelessSessionContainer.java:726)
+	at com.sun.ejb.containers.util.pool.NonBlockingPool.getObject(NonBlockingPool.java:247)
+	at com.sun.ejb.containers.StatelessSessionContainer._getContext(StatelessSessionContainer.java:449)
+	... 61 more
+Caused by: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer.createStatelessEJB(StatelessSessionContainer.java:534)
+	at com.sun.ejb.containers.StatelessSessionContainer.access$000(StatelessSessionContainer.java:95)
+	at com.sun.ejb.containers.StatelessSessionContainer$SessionContextFactory.create(StatelessSessionContainer.java:724)
+	... 63 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: PersonaPU] class or package not found
+	at org.hibernate.ejb.Ejb3Configuration.addNamedAnnotatedClasses(Ejb3Configuration.java:1401)
+	at org.hibernate.ejb.Ejb3Configuration.addClassesToSessionFactory(Ejb3Configuration.java:1184)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:1048)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:291)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:373)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Unknown Source)
+	at javax.persistence.Persistence.createEntityManagerFactory(Unknown Source)
+	at mx.com.gm.sga.eis.PersonaDAOImp.&lt;init&gt;(PersonaDAOImp.java:23)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.sun.ejb.containers.BaseContainer._constructEJBInstance(BaseContainer.java:1663)
+	at com.sun.ejb.containers.BaseContainer.createEjbInstanceAndContext(BaseContainer.java:1646)
+	at com.sun.ejb.containers.StatelessSessionContainer.createStatelessEJB(StatelessSessionContainer.java:475)
+	... 65 more
+Caused by: java.lang.ClassNotFoundException: beans.dominio.Persona
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.hibernate.internal.util.ReflectHelper.classForName(ReflectHelper.java:170)
+	at org.hibernate.ejb.Ejb3Configuration.classForName(Ejb3Configuration.java:1318)
+	at org.hibernate.ejb.Ejb3Configuration.addNamedAnnotatedClasses(Ejb3Configuration.java:1390)
+	... 81 more
+</error>
+    <system-out>0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2    [main] INFO  org.hibernate.validator.internal.util.Version  - HV000001: Hibernate Validator 4.3.0.Final
+16   [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver  - Found javax.persistence.Persistence on classpath containing &apos;getPersistenceUtil&apos;. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+18   [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver  - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+23   [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser  - Trying to load META-INF/validation.xml for XML based Validator configuration.
+24   [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser  - No default context class loader, fall back to Bean Validation&apos;s loader
+29   [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser  - No META-INF/validation.xml found. Using annotation based configuration only.
+Iniciando test EJB PersonaService
+49492 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@589bd68c
+49492 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@589bd68c
+49493 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@589bd68c
+49494 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@1ccca84d
+49495 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@c577bac
+49496 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@3054063a
+49498 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -&gt; org.hibernate.type.ByteType@3637139e
+49498 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -&gt; org.hibernate.type.ByteType@3637139e
+49498 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@3637139e
+49500 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -&gt; org.hibernate.type.CharacterType@3b654fe2
+49500 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -&gt; org.hibernate.type.CharacterType@3b654fe2
+49500 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@3b654fe2
+49502 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -&gt; org.hibernate.type.ShortType@3147e478
+49502 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -&gt; org.hibernate.type.ShortType@3147e478
+49502 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@3147e478
+49503 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -&gt; org.hibernate.type.IntegerType@6d49c28e
+49503 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -&gt; org.hibernate.type.IntegerType@6d49c28e
+49503 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@6d49c28e
+49505 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -&gt; org.hibernate.type.LongType@72bae8c5
+49505 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -&gt; org.hibernate.type.LongType@72bae8c5
+49505 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@72bae8c5
+49508 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -&gt; org.hibernate.type.FloatType@16b4832c
+49508 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -&gt; org.hibernate.type.FloatType@16b4832c
+49508 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@16b4832c
+49510 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -&gt; org.hibernate.type.DoubleType@49ffa050
+49510 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -&gt; org.hibernate.type.DoubleType@49ffa050
+49510 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@49ffa050
+49513 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@6152d6dd
+49513 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@6152d6dd
+49515 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@4791a77c
+49515 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@4791a77c
+49516 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -&gt; org.hibernate.type.StringType@c476fc1
+49516 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@c476fc1
+49517 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -&gt; org.hibernate.type.UrlType@76329fb2
+49518 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@76329fb2
+49520 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -&gt; org.hibernate.type.DateType@10f5eaf
+49520 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@10f5eaf
+49522 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -&gt; org.hibernate.type.TimeType@2d55cf6b
+49522 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@2d55cf6b
+49524 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@53829e40
+49524 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@53829e40
+49524 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@53829e40
+49527 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@3b1a7407
+49529 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@7226fb04
+49529 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@7226fb04
+49529 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@7226fb04
+49530 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@24587e5e
+49532 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -&gt; org.hibernate.type.LocaleType@33a433bc
+49532 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@33a433bc
+49533 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@244e3ce5
+49533 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@244e3ce5
+49534 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@55a68ad0
+49534 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@55a68ad0
+49536 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -&gt; org.hibernate.type.ClassType@4ef1ae10
+49536 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@4ef1ae10
+49538 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@16861be3
+49538 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@16861be3
+49539 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@431db536
+49540 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@33604ce8
+49542 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -&gt; org.hibernate.type.BinaryType@2b4299bc
+49542 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@2b4299bc
+49542 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -&gt; org.hibernate.type.BinaryType@2b4299bc
+49543 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@41f7dc64
+49544 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@41f7dc64
+49544 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@41f7dc64
+49545 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -&gt; org.hibernate.type.ImageType@20b7d0c3
+49546 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@575076e0
+49546 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@575076e0
+49546 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@575076e0
+49548 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@33e2874e
+49548 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@33e2874e
+49548 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@33e2874e
+49549 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -&gt; org.hibernate.type.TextType@45b7003c
+49555 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -&gt; org.hibernate.type.BlobType@6f7b85ef
+49555 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@6f7b85ef
+49555 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@439bc8a2
+49561 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -&gt; org.hibernate.type.ClobType@465dccb7
+49561 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@465dccb7
+49562 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@397cef79
+49563 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@39282ba9
+49567 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -&gt; org.hibernate.type.ObjectType@647fce18
+49567 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@647fce18
+49567 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@46f8f5f3
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@2db48ec
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@a907f6b
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@149d4f38
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@63bbf01a
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@47906e1d
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@5b2d569f
+49568 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@7d920f7c
+49604 [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+49612 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.1.4.Final}
+49616 [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+49617 [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+49636 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+49637 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+49639 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+49639 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+49641 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
+49642 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+49645 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+49646 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+49647 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
+49648 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+49650 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+49651 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+49652 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+49653 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+49655 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+49660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@589bd68c
+49660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@589bd68c
+49660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@589bd68c
+49660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@1ccca84d
+49660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@c577bac
+49660 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@3054063a
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -&gt; org.hibernate.type.ByteType@3637139e
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte -&gt; org.hibernate.type.ByteType@3637139e
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@3637139e
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration character -&gt; org.hibernate.type.CharacterType@3b654fe2
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char -&gt; org.hibernate.type.CharacterType@3b654fe2
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@3b654fe2
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -&gt; org.hibernate.type.ShortType@3147e478
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration short -&gt; org.hibernate.type.ShortType@3147e478
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@3147e478
+49661 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration integer -&gt; org.hibernate.type.IntegerType@6d49c28e
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration int -&gt; org.hibernate.type.IntegerType@6d49c28e
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@6d49c28e
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -&gt; org.hibernate.type.LongType@72bae8c5
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration long -&gt; org.hibernate.type.LongType@72bae8c5
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@72bae8c5
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -&gt; org.hibernate.type.FloatType@16b4832c
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration float -&gt; org.hibernate.type.FloatType@16b4832c
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@16b4832c
+49662 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -&gt; org.hibernate.type.DoubleType@49ffa050
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration double -&gt; org.hibernate.type.DoubleType@49ffa050
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@49ffa050
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@6152d6dd
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@6152d6dd
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@4791a77c
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@4791a77c
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration string -&gt; org.hibernate.type.StringType@c476fc1
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@c476fc1
+49663 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration url -&gt; org.hibernate.type.UrlType@76329fb2
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@76329fb2
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration date -&gt; org.hibernate.type.DateType@10f5eaf
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@10f5eaf
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration time -&gt; org.hibernate.type.TimeType@2d55cf6b
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@2d55cf6b
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@53829e40
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@53829e40
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@53829e40
+49664 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@3b1a7407
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@7226fb04
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@7226fb04
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@7226fb04
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@24587e5e
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration locale -&gt; org.hibernate.type.LocaleType@33a433bc
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@33a433bc
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@244e3ce5
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@244e3ce5
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@55a68ad0
+49665 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@55a68ad0
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration class -&gt; org.hibernate.type.ClassType@4ef1ae10
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@4ef1ae10
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@16861be3
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@16861be3
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@431db536
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@33604ce8
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration binary -&gt; org.hibernate.type.BinaryType@2b4299bc
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@2b4299bc
+49666 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [B -&gt; org.hibernate.type.BinaryType@2b4299bc
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@41f7dc64
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@41f7dc64
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@41f7dc64
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration image -&gt; org.hibernate.type.ImageType@20b7d0c3
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@575076e0
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@575076e0
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@575076e0
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@33e2874e
+49667 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@33e2874e
+49668 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@33e2874e
+49668 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration text -&gt; org.hibernate.type.TextType@45b7003c
+49669 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration blob -&gt; org.hibernate.type.BlobType@6f7b85ef
+49669 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@6f7b85ef
+49669 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@439bc8a2
+49669 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration clob -&gt; org.hibernate.type.ClobType@465dccb7
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@465dccb7
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@397cef79
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@39282ba9
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration object -&gt; org.hibernate.type.ObjectType@647fce18
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@647fce18
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@7cc9ea26
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@2c2ba4cb
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@65502214
+49670 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@6fed8302
+49671 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@523431b6
+49671 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@60abcde3
+49671 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@2f5a23aa
+49672 [main] DEBUG org.hibernate.type.BasicTypeRegistry  - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@46db862f
+49672 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+49672 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+49672 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+49672 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+49672 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+49673 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+49674 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory  - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+49674 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Look up for persistence unit: PersonaPU
+49722 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+49731 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Searching mapped entities in jar/par: file:/C:/Users/Lgutierrez/Desktop/Documentos/Workspace/sga-jee/target/classes/
+49733 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.cliente.ClientePersonaService
+49759 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.domain.Persona
+49768 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Java element filter matched for mx.com.gm.sga.domain.Persona
+49769 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.eis.PersonaDAO
+49772 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.eis.PersonaDAOImp
+49772 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.servicio.PersonaService
+49772 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.servicio.PersonaServiceImpl
+49773 [main] DEBUG org.hibernate.ejb.packaging.AbstractJarVisitor  - Filtering: mx.com.gm.sga.servicio.PersonaServiceRemote
+49778 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Detect class: true; detect hbm: true
+49778 [main] DEBUG org.hibernate.ejb.Ejb3Configuration  - Creating Factory: PersonaPU
+</system-out>
+    <system-err>mar 21, 2016 9:18:29 PM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
+INFORMACIÓN: Cannot find javadb client jar file, derby jdbc driver will not be available by default.
+mar 21, 2016 9:18:29 PM org.glassfish.ha.store.spi.BackingStoreFactoryRegistry register
+INFORMACIÓN: Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry
+mar 21, 2016 9:18:30 PM com.sun.enterprise.v3.server.AppServerStartup run
+INFORMACIÓN: GlassFish Server Open Source Edition 3.1.2.2 (5) startup time : Embedded (592ms), startup services(975ms), total(1.567ms)
+mar 21, 2016 9:18:30 PM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
+INFORMACIÓN: JMX006: JMXStartupService had disabled JMXConnector system
+mar 21, 2016 9:18:31 PM org.glassfish.admin.mbeanserver.JMXStartupService shutdown
+INFORMACIÓN: JMX001: JMXStartupService and JMXConnectors have been shut down.
+mar 21, 2016 9:18:31 PM com.sun.enterprise.v3.server.AppServerStartup stop
+INFORMACIÓN: Shutdown procedure finished
+mar 21, 2016 9:18:31 PM AppServerStartup run
+INFORMACIÓN: [Thread[GlassFish Kernel Main Thread,5,main]] exiting
+mar 21, 2016 9:18:32 PM org.glassfish.ha.store.spi.BackingStoreFactoryRegistry register
+INFORMACIÓN: Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry
+mar 21, 2016 9:18:32 PM com.sun.enterprise.v3.server.AppServerStartup run
+INFORMACIÓN: GlassFish Server Open Source Edition 3.1.2.2 (5) startup time : Embedded (3.087ms), startup services(70ms), total(3.157ms)
+mar 21, 2016 9:18:32 PM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
+INFORMACIÓN: JMX006: JMXStartupService had disabled JMXConnector system
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.EJBContainerProviderImpl skipJar
+INFORMACIÓN: ... skipping entry with a Manifest file with a special attribute: glassfish-embedded-static-shell.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding EJB module to ScatteredArchive classes
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive mysql-connector-java-5.1.20.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive hamcrest-core-1.1.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive slf4j-log4j12-1.5.6.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive antlr-2.7.7.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive junit-4.10.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive hibernate-entitymanager-4.1.4.Final.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive hibernate-jpa-2.0-api-1.0.1.Final.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive javassist-3.15.0-GA.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive hibernate-commons-annotations-4.0.1.Final.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive dom4j-1.6.1.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive javaee-api-6.0.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive test-classes
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive hibernate-core-4.1.4.Final.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive log4j-1.2.14.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive jboss-logging-3.1.0.GA.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.DeploymentElement getOrCreateApplication
+INFORMACIÓN: [DeploymentElement] adding library to ScatteredArchive slf4j-api-1.5.6.jar
+mar 21, 2016 9:18:32 PM org.glassfish.ejb.embedded.EJBContainerImpl deploy
+INFORMACIÓN: [EJBContainerImpl] Deploying app: org.glassfish.embeddable.archive.ScatteredArchive@646f0c2f
+mar 21, 2016 9:19:07 PM com.sun.ejb.containers.EjbContainerUtilImpl createThreadPoolExecutor
+INFORMACIÓN: Created EjbThreadPoolExecutor with thread-core-pool-size 16 thread-max-pool-size 32 thread-keep-alive-seconds 60 thread-queue-capacity 2147483647 allow-core-thread-timeout false 
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.SecurityLifecycle &lt;init&gt;
+INFORMACIÓN: SEC1002: Security Manager is OFF.
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 10:50:00 CLT 1998,
+               To: Wed Aug 14 19:59:00 CLT 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......&lt;..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&amp;...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&amp;.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....&gt;...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......&apos;....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFORMACIÓN: SEC1010: Entering Security Startup Service
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.PolicyLoader loadPolicy
+INFORMACIÓN: SEC1143: Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFORMACIÓN: SEC1115: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFORMACIÓN: SEC1115: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+INFORMACIÓN: SEC1115: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
+mar 21, 2016 9:19:07 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
+INFORMACIÓN: SEC1011: Security Service(s) Started Successfully
+mar 21, 2016 9:19:14 PM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: EJB5181:Portable JNDI names for EJB PersonaDAOImp: [java:global/classes/PersonaDAOImp!mx.com.gm.sga.eis.PersonaDAO, java:global/classes/PersonaDAOImp]
+mar 21, 2016 9:19:14 PM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 10:50:00 CLT 1998,
+               To: Wed Aug 14 19:59:00 CLT 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......&lt;..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&amp;...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&amp;.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....&gt;...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......&apos;....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]
+mar 21, 2016 9:19:14 PM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 10:50:00 CLT 1998,
+               To: Wed Aug 14 19:59:00 CLT 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......&lt;..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&amp;...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&amp;.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....&gt;...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......&apos;....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]
+mar 21, 2016 9:19:14 PM com.sun.enterprise.security.ssl.impl.SecuritySupportImpl checkCertificateDates
+GRAVE: SEC5054: Certificate has expired: [
+[
+  Version: V3
+  Subject: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 2048 bits
+  modulus: 23741889829347261660812437366387754385443431973861114865490414153884050331745811968523116847625570146592736935209718565296053386842135985534863157983128812774162998053673746470782252407673402238146869994438729551246768368782318393878374421033907597162218758024581735139682087126982809511479059100617027892880227587855877479432885604404402435662802390484099065871430585284534529627347717530352189612077130606642676951640071336717026459037542552927905851171460589361570392199748753414855675665635003335769915908187224347232807336022456537328962095005323382940080676931822787496212635993279098588863972868266229522169377
+  public exponent: 65537
+  Validity: [From: Fri Aug 14 10:50:00 CLT 1998,
+               To: Wed Aug 14 19:59:00 CLT 2013]
+  Issuer: CN=GTE CyberTrust Root 5, OU=&quot;GTE CyberTrust Solutions, Inc.&quot;, O=GTE Corporation, C=US
+  SerialNumber: [    01b6]
+
+Certificate Extensions: 4
+[1]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:5
+]
+
+[2]: ObjectId: 2.5.29.32 Criticality=false
+CertificatePolicies [
+  [CertificatePolicyId: [1.2.840.113763.1.2.1.3]
+[]  ]
+]
+
+[3]: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[4]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 76 0A 49 21 38 4C 9F DE   F8 C4 49 C7 71 71 91 9D  v.I!8L....I.qq..
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 41 3A D4 18 5B DA B8 DE   21 1C E1 8E 09 E5 F1 68  A:..[...!......h
+0010: 34 FF DE 96 F4 07 F5 A7   3C F3 AC 4A B1 9B FA 92  4.......&lt;..J....
+0020: FA 9B ED E6 32 21 AA 4A   76 C5 DC 4F 38 E5 DF D5  ....2!.Jv..O8...
+0030: 86 E4 D5 C8 76 7D 98 D7   B1 CD 8F 4D B5 91 23 6C  ....v......M..#l
+0040: 8B 8A EB EA 7C EF 14 94   C4 C6 F0 1F 4A 2D 32 71  ............J-2q
+0050: 63 2B 63 91 26 02 09 B6   80 1D ED E2 CC B8 7F DB  c+c.&amp;...........
+0060: 87 63 C8 E1 D0 6C 26 B1   35 1D 40 66 10 1B CD 95  .c...l&amp;.5.@f....
+0070: 54 18 33 61 EC 13 4F DA   13 F7 99 AF 3E D0 CF 8E  T.3a..O.....&gt;...
+0080: A6 72 A2 B3 C3 05 9A C9   27 7D 92 CC 7E 52 8D B3  .r......&apos;....R..
+0090: AB 70 6D 9E 89 9F 4D EB   1A 75 C2 98 AA D5 02 16  .pm...M..u......
+00A0: D7 0C 8A BF 25 E4 EB 2D   BC 98 E9 58 38 19 7C B9  ....%..-...X8...
+00B0: 37 FE DB E2 99 08 73 06   C7 97 83 6A 7D 10 01 2F  7.....s....j.../
+00C0: 32 B9 17 05 4A 65 E6 2F   CE BE 5E 53 A6 82 E9 9A  2...Je./..^S....
+00D0: 53 0A 84 74 2D 83 CA C8   94 16 76 5F 94 61 28 F0  S..t-.....v_.a(.
+00E0: 85 A7 39 BB D7 8B D9 A8   B2 13 1D 54 09 34 24 7D  ..9........T.4$.
+00F0: 20 81 7D 66 7E A2 90 74   5C 10 C6 BD EC AB 1B C2   ..f...t\.......
+
+]
+mar 21, 2016 9:19:17 PM com.sun.jts.CosTransactions.DefaultTransactionService setServerName
+INFORMACIÓN: JTS5014: Recoverable JTS instance, serverId = [3700]
+mar 21, 2016 9:19:18 PM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: EJB5181:Portable JNDI names for EJB PersonaServiceImpl: [java:global/classes/PersonaServiceImpl!mx.com.gm.sga.servicio.PersonaService, java:global/classes/PersonaServiceImpl!mx.com.gm.sga.servicio.PersonaServiceRemote]
+mar 21, 2016 9:19:18 PM com.sun.ejb.containers.BaseContainer initializeHome
+INFORMACIÓN: EJB5182:Glassfish-specific (Non-portable) JNDI names for EJB PersonaServiceImpl: [mx.com.gm.sga.servicio.PersonaServiceRemote#mx.com.gm.sga.servicio.PersonaServiceRemote, mx.com.gm.sga.servicio.PersonaServiceRemote]
+mar 21, 2016 9:19:18 PM org.glassfish.deployment.admin.DeployCommand execute
+INFORMACIÓN: classes was successfully deployed in 42.883 milliseconds.
+mar 21, 2016 9:19:19 PM com.sun.ejb.containers.StatelessSessionContainer createStatelessEJB
+GRAVE: EJB5070: Exception creating stateless session bean : [PersonaDAOImp]
+mar 21, 2016 9:19:19 PM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: EJB5184:A system exception occurred during an invocation on EJB PersonaDAOImp, method: public java.util.List mx.com.gm.sga.eis.PersonaDAOImp.findAllPersonas()
+mar 21, 2016 9:19:19 PM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: 
+javax.ejb.EJBException: javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer._getContext(StatelessSessionContainer.java:454)
+	at com.sun.ejb.containers.BaseContainer.getContext(BaseContainer.java:2547)
+	at com.sun.ejb.containers.BaseContainer.preInvoke(BaseContainer.java:1899)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:89)
+	at com.sun.proxy.$Proxy109.findAllPersonas(Unknown Source)
+	at mx.com.gm.sga.servicio.PersonaServiceImpl.listarPersonas(PersonaServiceImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1052)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1124)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:5388)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:619)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:800)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:571)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doAround(SystemInterceptorProxy.java:162)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:861)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:800)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:370)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:5360)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:5348)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:214)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:89)
+	at com.sun.proxy.$Proxy175.listarPersonas(Unknown Source)
+	at test.PersonaServiceTest.testEJBPersonaService(PersonaServiceTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer$SessionContextFactory.create(StatelessSessionContainer.java:726)
+	at com.sun.ejb.containers.util.pool.NonBlockingPool.getObject(NonBlockingPool.java:247)
+	at com.sun.ejb.containers.StatelessSessionContainer._getContext(StatelessSessionContainer.java:449)
+	... 61 more
+Caused by: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer.createStatelessEJB(StatelessSessionContainer.java:534)
+	at com.sun.ejb.containers.StatelessSessionContainer.access$000(StatelessSessionContainer.java:95)
+	at com.sun.ejb.containers.StatelessSessionContainer$SessionContextFactory.create(StatelessSessionContainer.java:724)
+	... 63 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: PersonaPU] class or package not found
+	at org.hibernate.ejb.Ejb3Configuration.addNamedAnnotatedClasses(Ejb3Configuration.java:1401)
+	at org.hibernate.ejb.Ejb3Configuration.addClassesToSessionFactory(Ejb3Configuration.java:1184)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:1048)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:291)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:373)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Unknown Source)
+	at javax.persistence.Persistence.createEntityManagerFactory(Unknown Source)
+	at mx.com.gm.sga.eis.PersonaDAOImp.&lt;init&gt;(PersonaDAOImp.java:23)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.sun.ejb.containers.BaseContainer._constructEJBInstance(BaseContainer.java:1663)
+	at com.sun.ejb.containers.BaseContainer.createEjbInstanceAndContext(BaseContainer.java:1646)
+	at com.sun.ejb.containers.StatelessSessionContainer.createStatelessEJB(StatelessSessionContainer.java:475)
+	... 65 more
+Caused by: java.lang.ClassNotFoundException: beans.dominio.Persona
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.hibernate.internal.util.ReflectHelper.classForName(ReflectHelper.java:170)
+	at org.hibernate.ejb.Ejb3Configuration.classForName(Ejb3Configuration.java:1318)
+	at org.hibernate.ejb.Ejb3Configuration.addNamedAnnotatedClasses(Ejb3Configuration.java:1390)
+	... 81 more
+
+mar 21, 2016 9:19:19 PM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: EJB5184:A system exception occurred during an invocation on EJB PersonaServiceImpl, method: public java.util.List mx.com.gm.sga.servicio.PersonaServiceImpl.listarPersonas()
+mar 21, 2016 9:19:19 PM com.sun.ejb.containers.BaseContainer postInvoke
+ADVERTENCIA: 
+javax.ejb.EJBException: javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer._getContext(StatelessSessionContainer.java:454)
+	at com.sun.ejb.containers.BaseContainer.getContext(BaseContainer.java:2547)
+	at com.sun.ejb.containers.BaseContainer.preInvoke(BaseContainer.java:1899)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:212)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:89)
+	at com.sun.proxy.$Proxy109.findAllPersonas(Unknown Source)
+	at mx.com.gm.sga.servicio.PersonaServiceImpl.listarPersonas(PersonaServiceImpl.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.runMethod(EJBSecurityManager.java:1052)
+	at org.glassfish.ejb.security.application.EJBSecurityManager.invoke(EJBSecurityManager.java:1124)
+	at com.sun.ejb.containers.BaseContainer.invokeBeanMethod(BaseContainer.java:5388)
+	at com.sun.ejb.EjbInvocation.invokeBeanMethod(EjbInvocation.java:619)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:800)
+	at com.sun.ejb.EjbInvocation.proceed(EjbInvocation.java:571)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.doAround(SystemInterceptorProxy.java:162)
+	at com.sun.ejb.containers.interceptors.SystemInterceptorProxy.aroundInvoke(SystemInterceptorProxy.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.sun.ejb.containers.interceptors.AroundInvokeInterceptor.intercept(InterceptorManager.java:861)
+	at com.sun.ejb.containers.interceptors.AroundInvokeChainImpl.invokeNext(InterceptorManager.java:800)
+	at com.sun.ejb.containers.interceptors.InterceptorManager.intercept(InterceptorManager.java:370)
+	at com.sun.ejb.containers.BaseContainer.__intercept(BaseContainer.java:5360)
+	at com.sun.ejb.containers.BaseContainer.intercept(BaseContainer.java:5348)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandler.invoke(EJBLocalObjectInvocationHandler.java:214)
+	at com.sun.ejb.containers.EJBLocalObjectInvocationHandlerDelegate.invoke(EJBLocalObjectInvocationHandlerDelegate.java:89)
+	at com.sun.proxy.$Proxy175.listarPersonas(Unknown Source)
+	at test.PersonaServiceTest.testEJBPersonaService(PersonaServiceTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.ejb.EJBException: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer$SessionContextFactory.create(StatelessSessionContainer.java:726)
+	at com.sun.ejb.containers.util.pool.NonBlockingPool.getObject(NonBlockingPool.java:247)
+	at com.sun.ejb.containers.StatelessSessionContainer._getContext(StatelessSessionContainer.java:449)
+	... 61 more
+Caused by: javax.ejb.CreateException: Could not create stateless EJB
+	at com.sun.ejb.containers.StatelessSessionContainer.createStatelessEJB(StatelessSessionContainer.java:534)
+	at com.sun.ejb.containers.StatelessSessionContainer.access$000(StatelessSessionContainer.java:95)
+	at com.sun.ejb.containers.StatelessSessionContainer$SessionContextFactory.create(StatelessSessionContainer.java:724)
+	... 63 more
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: PersonaPU] class or package not found
+	at org.hibernate.ejb.Ejb3Configuration.addNamedAnnotatedClasses(Ejb3Configuration.java:1401)
+	at org.hibernate.ejb.Ejb3Configuration.addClassesToSessionFactory(Ejb3Configuration.java:1184)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:1048)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:291)
+	at org.hibernate.ejb.Ejb3Configuration.configure(Ejb3Configuration.java:373)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:56)
+	at javax.persistence.Persistence.createEntityManagerFactory(Unknown Source)
+	at javax.persistence.Persistence.createEntityManagerFactory(Unknown Source)
+	at mx.com.gm.sga.eis.PersonaDAOImp.&lt;init&gt;(PersonaDAOImp.java:23)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.sun.ejb.containers.BaseContainer._constructEJBInstance(BaseContainer.java:1663)
+	at com.sun.ejb.containers.BaseContainer.createEjbInstanceAndContext(BaseContainer.java:1646)
+	at com.sun.ejb.containers.StatelessSessionContainer.createStatelessEJB(StatelessSessionContainer.java:475)
+	... 65 more
+Caused by: java.lang.ClassNotFoundException: beans.dominio.Persona
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.hibernate.internal.util.ReflectHelper.classForName(ReflectHelper.java:170)
+	at org.hibernate.ejb.Ejb3Configuration.classForName(Ejb3Configuration.java:1318)
+	at org.hibernate.ejb.Ejb3Configuration.addNamedAnnotatedClasses(Ejb3Configuration.java:1390)
+	... 81 more
+
+</system-err>
+  </testcase>
+</testsuite>
