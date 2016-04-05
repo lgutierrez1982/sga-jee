@@ -5,6 +5,7 @@
 	<persistence-unit name="PersonaPRUEBA" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>mx.com.gm.sga.domain.Persona</class>
+		<class>mx.com.gm.sga.domain.Usuario</class>
 		<properties>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
